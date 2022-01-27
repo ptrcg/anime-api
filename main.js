@@ -11,7 +11,7 @@ fetch(api_link)
             response.json().then(function(json) {
                 console.log(json);
                 
-                for(let i = 5; i < 9; i++) {
+                for(let i = 0; i < 4; i++) {
                     let title = 'title' + (i+1);
                     let synopsis = 'synopsis' + (i+1);
                     let banner = 'banner' + (i+1);
