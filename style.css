@@ -11,7 +11,7 @@ header{
 }
 .logo{
     font-family: 'Permanent Marker';
-    font-size: 25px;
+    font-size: 36px;
     padding:50px;
     margin-left: 50px;
 
@@ -52,9 +52,10 @@ header{
     filter: brightness(80%);
 }
 .box{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     width: 100%;
-    padding:25px
+    padding:25px;
+    border-radius: 20px;
 }
 .box p{
     text-align: justify;
