@@ -1,5 +1,4 @@
-let api_link = 'https://kitsu.io/api/edge/anime';
-
+let api_link = 'https://kitsu.io/api/edge/anime?page%5Blimit%5D=10&page%5Boffset%5D=14';
 fetch(api_link)
     .then(
         function(response) {
@@ -24,7 +23,7 @@ fetch(api_link)
 
                     document.getElementById(title).innerHTML = json.data[i].attributes.canonicalTitle;
                     document.getElementById(synopsis).innerHTML = json.data[i].attributes.synopsis;
-                    document.getElementById(banner).src = json.data[i].attributes.coverImage.original;
+                    document.getElementById(banner).src = json.data[i].attributes.coverImage.large;
                     document.getElementById(rating).innerHTML = 'Rating: '+json.data[i].attributes.averageRating;
                     document.getElementById(status).innerHTML = 'Status: '+json.data[i].attributes.status;
                     document.getElementById(ep_count).innerHTML = 'Episode Count: '+json.data[i].attributes.episodeCount;
