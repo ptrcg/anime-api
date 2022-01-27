@@ -60,7 +60,7 @@ header{
 .box p{
     text-align: justify;
 }
-.row{
+.row-1, .row-2{
     padding: 50px;
 }
 .col-1{
@@ -83,4 +83,12 @@ header{
     white-space: nowrap;
 }
 
-
+.row-2{
+    background: #000
+}
+.row-2 .col-1 h1{
+    color: #fff;
+}
+.row-2 .col-2 p{
+    color: #fff;
+}
